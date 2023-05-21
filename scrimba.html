@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Example</title>
+  <style>
+    body{
+      z-index: 100;
+      background-image: url(images/michal-biernat-h0xEUQXzU38-unsplash.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .form-container {
+     
+      max-width: 800px;
+      margin: auto auto;
+      padding: 15%;
+    }
+
+    .form-container form {
+      background-image: url(images/michal-biernat-h0xEUQXzU38-unsplash.jpg);
+      z-index: 20;
+      border: 3px outset black;
+      border-radius: 3%;
+      background-size:auto;
+      background-repeat: no-repeat;
+      z-index: -1;
+      background-size: cover;
+      padding: 20px;
+    }
+
+    .form-container input[type=text], .form-container textarea {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    .form-container button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 14px 20px;
+      margin-top: 10px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      transition: all .55s ease;
+    }
+    .form-container button:hover{
+      background: black;
+     border: none;
+     font-size: large;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <form>
+      <label style="color: white;" for="name">Name:</label>
+      <input style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"  type="text" id="name" name="name" placeholder="Your name">
+
+      <label style="color: white;" for="email">Email:</label>
+      <input style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;" type="text" id="email" name="email" placeholder="Your email">
+
+      <label style="color: white;" for="message">Message:</label>
+      <textarea style="font-size: large; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"  id="message" name="message" placeholder="Your message"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

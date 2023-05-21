@@ -1,0 +1,293 @@
+/* Header styles */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    transition: all .55s ease;
+}
+ header {
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    }
+    /* header {
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        transition: background-color 0.3s ease;
+      }
+      
+      header.transparent {
+        background-color: black;
+      } */
+    .logo a {
+    color: #EDEAE0;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: default;
+    }
+    .logo ::selection{
+        background-color:#FE5A1D;
+    }
+    .logo span{
+        color: #EDEAE0;
+    }
+    
+    nav ul {
+    display: flex;
+    margin-right: 2em;
+    }
+    
+    nav ul li {
+    list-style: none;   
+    margin-left: 20px;
+    }
+    
+    nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+    font-size: 1.3rem;
+    
+    }
+    /* nav ul li a:hover{
+        border-bottom: 2px solid white;
+        color: #FE5A1D;
+    } */
+    nav ul li a:hover{
+    border-bottom: 2px solid white;
+    color: whitesmoke;
+    width: 100%;   
+    }
+    /* Hero section styles */
+    .hero {
+    background-image: url('images/nom.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    position: relative;
+    bottom: 4.8em;
+    }
+    
+    .hero h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 1px 1px black;
+    }
+    #bro{
+        position: relative;
+        bottom: 10em;
+    }
+    
+    .hero p {
+    font-size: 20px;
+    text-align: center;
+    max-width: 700px;
+    text-shadow: 2px 1px 1px black;
+    font-weight: 600;
+    }
+    
+    .btn:hover {
+     border: none;
+    color: white;
+     padding: 10px 30px; 
+     text-decoration: none;
+     background: black;
+     font-size: 18px;
+    position: relative;
+    border: 2px double #FE5A1D;
+    }
+    
+    /* Services section styles */
+    .services {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 14.8em;
+    }
+    
+    .services h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    }
+    
+    .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    }
+    
+    .service-item img {
+    margin-bottom: 20px;
+    }
+    
+    .service-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    
+    .service-item p {
+    max-width: 500px;
+    }
+    section{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10%;
+        margin: 5%;
+    }
+    #av{
+        text-align: center;
+        padding-top: 5%;
+        font-size: 40px;
+        margin-bottom: 50px;
+        font-family: 'Abril Fatface', cursive;
+        color: orangered;
+        text-shadow: 3px 3px 3px black;
+    }
+    
+    .btn {
+        /* background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 10px 20px; */
+        background: black;
+        color: black;
+        color: #fff;
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-decoration: none;
+        font-size: 18px;
+        border: 4px double white;
+        transition: all .30s ease;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+      }
+      .btn-container {
+        text-align: center;
+        margin-top: 50vh;
+        transform: translateY(-50%);
+      }
+  
+  
+      /* Styles CSS pour le formulaire (initialement masqué) */
+      .form-container {
+        display: none;
+        text-align: center;
+      }
+  
+      /* Styles CSS pour rendre le formulaire visible lorsqu'il est activé */
+      .form-container.active {
+        display: block;
+      }
+  
+      /* Styles CSS pour le formulaire */
+      .form-container form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+  
+      .form-container input[type=text], .form-container textarea {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+      }
+  
+      .form-container button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+      }
+  
+
+    /* Cars section styles */
+    /* .cars {
+    background-color: #fff;
+    /* padding: 50px 0; */
+    /* text-align: center;
+    }
+    
+    .cars h2 {
+    font-size: 40px;
+    margin-bottom: 50px;
+    }
+      */
+    /* .car-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    } */
+    body ::selection{
+        background-color: #FE5A1D;
+        color: black;
+    }   
+    /* .car-item img {
+    margin-bottom: 20px;
+    }
+    
+    .car-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    }
+    
+    .car-item p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    }
+     */
+    /* Footer styles */
+    footer {
+    background-color: #222;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    }
+    
+    footer p {
+    font-size: 18px;
+    }
