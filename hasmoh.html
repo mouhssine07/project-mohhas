@@ -1,64 +1,68 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Car Rental Website</title>
-	<link rel="stylesheet" type="text/css" href="hasmoh.css">
-</head>
-<body>
-	<div class="btn1">
-		<img src="images/icons8-flèche-haut-64.png"  class="icone">
-	</div>
-	<header>
-		<div class="logo">	
-			<a href="#">Car <span>Rentals</span></a>
-		</div>
-		<nav>
-			<ul id="more">
-				<li><a  href="#">Home</a></li>
-				<li><a  href="#">About</a></li>
-				<li><a  href="#">Cars</a></li>
-				<li><a  href="#">Services</a></li>
-				<li><a  href="#">Contact</a></li>
-			</ul>
-		</nav>
-	</header>
-	<main>
-		<section class="hero">
-			<div id="bro">
-			<h1>Rent a Car Today</h1>
-			<p>Get behind the wheel of your dream car today with our affordable rental rates.</p>
-		</div>
-			<a href="newyork.html"class="btn">Browse Cars</a>
-		</section>
-		<section class="services">
-				<h2>Our Services</h2>
-			<div class="service-item">
-				<img style=" border: 10px solid black;" src="images/001357152_896x598_c.jpg" alt="Car Maintenance">
-				<p>Nous vous offrons l'un des meillieurs voiture du marche Marocaine.</p>
-			</div>
-			<div class="service-item">
-				<h3>Service Maintenance </h3>
-				<img style=" border: 10px solid black;"  src="images/bien-entretenir-voiture.jpg" alt="Roadside Assistance">
-				<p>Notre agence vous aides et s'occupe de votre voiture en cas d'accident ou en cas panne partout au Maroc 24/24 en applent notre numero de telephone</p>
-			</div>
-			<div class="service-item">
-				<h3>Service Livraison</h3>
-				<img style=" border: 10px solid black;"  style="background-position: center; padding: 20px 0 20px 0;" src="images/brabus 1.jpg" alt="GPS Navigation">
-				<p>Avec notre agence vous puvez commendez votre voiture sur internet et la recevoir en domicile en mois de 10H</p>
-			</div>
-		</section>
-	</main>
-	<footer>
-		<footer>
-			<ul>
-			  <li><strong>Email :</strong> CarRental@gmail.com</li>
-			  <li><strong>Telephone:</strong> +21261647658</li>
-			  <li><strong>Adresse :</strong> 123 Rue californie, Casablanca, Maroc</li>
-			</ul>
-		  </footer>
-		  <p>&copy;2023 Car Rentals</p>
-	</footer>
-	
-	<script src="script.js"></script>
-</body>
-</html>
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background: #000;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  position: relative;
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h2:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
