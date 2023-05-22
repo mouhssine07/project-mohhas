@@ -1,99 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="hasmoh.css">
-  <title>Available Car</title>
-</head>
-<body>
-  <div id="av"> <h2>  Available Cars</h2></div>
- 
-  <section class="cars">
-    <div class="car-item">
-      <img style=" border: 10px solid black;"  style="background-position: center; padding: 20px 0 20px 0;"  src="images/nouveau-bmw-8-series-min.jpg" alt="Car Image"> 
-      <h3>BMW SERIE 7 2023</h3>
-      <p>Starting at $500/day</p>
-      <a href="scrimba.html" class="btn">Rent now</a>
-      <div class="form-container" id="formContainer">
-        <form>
-          <input type="text" placeholder="Nom">
-          <input type="text" placeholder="Email">
-          <textarea placeholder="Message"></textarea>
-          <button type="submit">Envoyer</button>
-        </form>
-      </div>
-    </div>
-    <div class="car-item">
-      <img style=" border: 10px solid black;"  style="background-position: center; padding: 20px 0 20px 0;" src="images/Used-2022-Lamborghini-Urus-1667531826.jpg" alt="Car Image">
-      <h3>LAMBORGHINI URUS 2023 SPECIAL EDITION</h3>
-      <p>Starting at $2000/day</p>
-      <a href="scrimba.html" class="btn">Rent Now</a>
-    </div>
-    <div class="car-item">
-      <img style=" border: 10px solid black;"  style="background-position: center; padding: 20px 0 20px 0;" src="images/2560px-McLaren_540C.jpg" alt="Car Image">
-      <h3>MC LAREN 2023 1of1</h3>
-      <p>Starting at $3200/day</p>
-      <a  href="scrimba.html" class="btn">Rent Now</a>
-    </div>
-  </section>
-  <section class="cars">
-    <div class="car-item">
-      <img id="ok" style=" border: 10px solid black;"  style="background-position: center; padding: 20px 0 20px 0;"  src="images/Mercedes-Maybach_Z223_680_IAA_2021_1X7A0285.jpg" alt="Car Image"> 
-      <h3>MERCEDES MAYBACH Z223</h3>
-      <p>Starting at $5780/day</p>
-      <a href="scrimba.html" class="btn">Rent now</a>
-      <div class="form-container" id="formContainer">
-        <form>
-          <input type="text" placeholder="Nom">
-          <input type="text" placeholder="Email">
-          <textarea placeholder="Message"></textarea>
-          <button type="submit">Envoyer</button>
-        </form>
-      </div>
-    </div>
-    <div class="car-item">
-      <img style=" border: 10px solid black;"  style="background-position: center; padding: 20px 0 20px 0;" src="images/5FkvMvs3Cf6Klg5qQ8ij.jpg" alt="Car Image">
-      <h3>AUDI Q8 2023 MODELE S</h3>
-      <p>Starting at $600/day</p>
-      <a href="scrimba.html" class="btn">Rent Now</a>
-    </div>
-    <div class="car-item">
-      <img style=" border: 10px solid black;"  style="background-position: center; padding: 20px 0 20px 0;" src="images/raw.jpg" alt="Car Image">
-      <h3>TESLA MODELA S</h3>
-      <p>Starting at $360/day</p>
-      <a  href="scrimba.html" class="btn">Rent Now</a>
-    </div>
-  </section>
-  <section class="cars">
-    <div class="car-item">
-      <img id="ok" style=" border: 10px solid black;"  style="background-position: center; padding: 20px 0 20px 0;"  src="images/514626-post-malone-vend-sa-bugatti-chiron-achetee-a-olivier-benloulou.jpg" alt="Car Image"> 
-      <h3>BUGATTI CHIRONE 1of1</h3>
-      <p>Starting at $6000/day</p>
-      <a href="scrimba.html" class="btn">Rent now</a>
-      <div class="form-container" id="formContainer">
-        <form>
-          <input type="text" placeholder="Nom">
-          <input type="text" placeholder="Email">
-          <textarea placeholder="Message"></textarea>
-          <button type="submit">Envoyer</button>
-        </form>
-      </div>
-    </div>
-    <div class="car-item">
-      <img style=" border: 10px solid black;"  style="background-position: center; padding: 20px 0 20px 0;" src="images/800px-2019_Rolls-Royce_Cullinan_V12_Automatic_6.75_Front.jpg" alt="Car Image">
-      <h3>ROLLS ROYCE CULLINAN V12</h3>
-      <p>Starting at $5400/day</p>
-      <a href="scrimba.html" class="btn">Rent Now</a>
-    </div>
-    <div class="car-item">
-      <img style=" border: 10px solid black;"  style="background-position: center; padding: 20px 0 20px 0;" src="images/bentayga-phev-01.jpg" alt="Car Image">
-      <h3>BENTAYGA MODELE HYBRIDE</h3>
-      <p>Starting at $360/day</p>
-      <a  href="scrimba.html" class="btn">Rent Now</a>
-    </div>
-  </section>
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
-</body>
-</html>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background: #000;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  position: relative;
+}
+
+.content h2 {
+  color: #fff;
+  font-size: 8em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.content h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #03a9f4;
+}
+
+.content h2:nth-child(2) {
+  color: #03a9f4;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
