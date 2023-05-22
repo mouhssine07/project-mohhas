@@ -77,6 +77,10 @@
     color: whitesmoke;
     width: 100%;   
     }
+    .car-item:hover{
+      transform: scale(0.90) translateZ(0); 
+
+    }
    
     .hero {
     background-image: url('images/nom.jpg');
@@ -177,8 +181,9 @@
         font-size: 40px;
         margin-bottom: 50px;
         font-family: 'Abril Fatface', cursive;
-        color: orangered;
+        color: #76406B ;
         text-shadow: 3px 3px 3px black;
+        
     }
     
     .btn {
@@ -296,3 +301,21 @@
     footer p {
     font-size: 18px;
     }
+    .btn1 {
+      height: 100px;
+      width: 100px;
+      background:rgba(255, 132, 0, 0.662);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      cursor: pointer;
+  }
+  .icone {
+      width: 50px;
+  }
+  
+    
