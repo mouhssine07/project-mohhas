@@ -1,0 +1,53 @@
+
+  
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    z-index: 100;
+    background-image: url("images/galaxy-background-with-falling-star-space-galaxy-illustration-free-vector.webp");
+    background-size: cover;
+    height: 900;
+  
+}
+#zou img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-top: 2em;
+}
+/* #zou h1{
+    text-align: center;
+    margin-top: 3em;
+    color: wheat;
+    font-family: 'Pangolin', cursive;
+} */
+section img{
+    width: 10%;
+    position: relative;
+    left: 65%;
+    top: 5em;
+    background: linear-gradient(90.90deg, black 30%, white 30%)
+}
+section h3{
+    color: white;
+    text-align: start;
+    margin-right: 50%;
+    position: relative;
+    top: 5em;
+    left: 10%;
+    font-family: 'Josefin Sans', sans-serif;
+    line-height: 1.30;
+    text-shadow: 1px 4px 4px black;
+}
+section{
+    display: flex;
+    border-top: 10px outset;
+    border-bottom: 10px solid ;
+    padding-bottom: 7em;
+    border-radius: 45%;
+}
