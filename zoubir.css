@@ -2,23 +2,52 @@
   
 @import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Pangolin&display=swap');
 *{
     margin: 0;
     padding: 0;
+    transition: all .55s ease;
 }
 body{
     z-index: 100;
-    background-image: url("images/galaxy-background-with-falling-star-space-galaxy-illustration-free-vector.webp");
+    /* background: linear-gradient(390.55deg,black 0%, white 25%, wheat 30% ); */
+     /* background-image: url("images/galaxy-background-with-falling-star-space-galaxy-illustration-free-vector.webp"); */
     background-size: cover;
     height: 900;
   
 }
-#zou img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    margin-top: 2em;
+#zou h1{
+/* text-align: center;
+margin-top: 5em;
+position: relative;
+padding-bottom: 30px;
+right: 3em;
+color: white; */
+margin: 3em 0 3em 0;
+position: absolute;
+left: 40%;
+border: 10px outset goldenrod;
+padding: 15px;
+background: gray;
+color: black;
+font-family: 'Mochiy Pop One', sans-serif;
+animation-name: mohsin;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-fill-mode: both;
+animation-direction: reverse;
+animation-timing-function: ease;
+}
+#video_backgroud{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 /* #zou h1{
     text-align: center;
@@ -26,28 +55,66 @@ body{
     color: wheat;
     font-family: 'Pangolin', cursive;
 } */
-section img{
-    width: 10%;
-    position: relative;
-    left: 65%;
-    top: 5em;
-    background: linear-gradient(90.90deg, black 30%, white 30%)
-}
+
 section h3{
     color: white;
-    text-align: start;
-    margin-right: 50%;
+    text-align: center;
     position: relative;
-    top: 5em;
-    left: 10%;
+    left: 15%;
+    right: 60%;
+    top: 15em;
+    margin-left: 10%;
+    margin-right: 40%;
+    line-height: 1.7;
+    border: 10px outset goldenrod;
+    padding: 15px;
+    background: linear-gradient(100.55deg, #808080 50%, #242124 25%, #100C08 25% );
+    font-weight: 800;
+    font-family:'Times New Roman', Times, serif;
+    /* color: white;
+    text-align: start;
+    position: relative;
+    top: 2em;
+    right: 24em;
+    border: 2px outset black;
+    width: 100%;
+    margin-bottom: 100px;
+    background: w;
+    color: white;
+    padding: 10px;
     font-family: 'Josefin Sans', sans-serif;
     line-height: 1.30;
-    text-shadow: 1px 4px 4px black;
+    z-index: 100;
+    text-shadow: 1px 4px 4px black; */
+}
+#video1{
+    height: 60%;
+    width: 60%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    position: relative;
+    left: 20%;
 }
 section{
     display: flex;
-    border-top: 10px outset;
-    border-bottom: 10px solid ;
-    padding-bottom: 7em;
+    border-top: 10px outset transparent;
+    border-bottom: 10px solid transparent ;
+    padding-bottom: 10em;
     border-radius: 45%;
+    background: transparent;
+}
+@keyframes mohsin {
+    0%{
+        color: black;
+    }
+    50%{
+        color: black;
+    }
+    100%{
+        color: white;
+       
+    }
 }
