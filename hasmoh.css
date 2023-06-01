@@ -6,6 +6,12 @@
     scroll-behavior: smooth;
     transition: all .55s ease;
 }
+body{
+  animation-name: coco;
+  animation-timing-function: ease;
+  animation-duration: 1s;
+  animation-fill-mode:forwards;
+}
  header {
     background-color: black;
     color: #fff;
@@ -76,10 +82,6 @@
     border-bottom: 2px solid white;
     color: whitesmoke;
     width: 100%;   
-    }
-    .car-item:hover{
-      transform: scale(0.90) translateZ(0); 
-
     }
    
     .hero {
@@ -168,12 +170,19 @@
     
     .service-item p {
     max-width: 500px;
+    
     }
     section{
         display: flex;
         justify-content: space-between;
         margin-top: 10%;
         margin: 5%;
+    }
+    section img{
+      cursor: pointer;
+    }
+    section img:hover{
+      transform: scale(0.90) translateZ(0); 
     }
     #av{
         text-align: center;
@@ -182,8 +191,7 @@
         margin-bottom: 50px;
         font-family: 'Abril Fatface', cursive;
         color: #76406B ;
-        text-shadow: 3px 3px 3px black;
-        
+        text-shadow: 6px 6px 6px black;
     }
     
     .btn {
@@ -214,19 +222,15 @@
         transform: translateY(-50%);
       }
   
-  
-      /* Styles CSS pour le formulaire (initialement masqué) */
       .form-container {
         display: none;
         text-align: center;
       }
   
-      /* Styles CSS pour rendre le formulaire visible lorsqu'il est activé */
       .form-container.active {
         display: block;
       }
   
-      /* Styles CSS pour le formulaire */
       .form-container form {
         max-width: 400px;
         margin: 0 auto;
@@ -302,8 +306,8 @@
     font-size: 18px;
     }
     .btn1 {
-      height: 100px;
-      width: 100px;
+      
+      padding: 30px;
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -313,6 +317,11 @@
       bottom: 20px;
       cursor: pointer;
       background: orangered;
+      animation-name: hassan;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      
+
   }
   .icone {
       width: 50px;
@@ -346,6 +355,33 @@
     border: 0;
     margin-left: 50%;
     transform: translateX(-50%);
+    
     }
-    
-    
+    .ok{
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+      animation-fill-mode: both;
+    }
+    @keyframes hassan {
+      for{
+        rotate: 0;
+      }
+      to{
+        rotate: 360deg;
+      }
+    }
+    @keyframes ok {
+      0%{
+        color: white;
+      }
+      20%{
+        color: white;
+      }
+      50%{
+        color: white;
+      }
+      100%{
+        color: black;
+      }
+    }
